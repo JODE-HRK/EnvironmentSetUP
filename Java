@@ -1,0 +1,16 @@
+#!/bin/bash
+
+apt-get update
+apt-get upgrade
+
+apt install openjdk-19-jdk-headless
+apt install openjdk-19-jre-headless
+
+echo "JAVA_HOME=\"$(update-alternatives --config java | sed -n '1p' | cut -d':' -f2 | tr -d ' ')\"" >> /etc/environment
+
+source /etc/environment
+
+# after finish, please use command:echo 
+# $JAVA_HOME
+# java -version
+# to check the version
