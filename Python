@@ -1,0 +1,10 @@
+#!/bin/bash
+
+sudo apt-get update
+sudo apt-get install python3.11
+
+
+# make sure you don't have /usr/bin/python and py
+# link py and python command to python3.11 or you should type "python3.11" to enable python
+sudo ln -s /usr/bin/python3.11 /usr/bin/python
+sudo ln -s /usr/bin/python3.11 /usr/bin/py
