@@ -1,16 +1,17 @@
 #!/bin/bash
 
 sudo apt-get update
-sudo apt-get install python3.11
+# the  22.04 automatically installed 3.10
+# sudo apt-get install python3.10
 
 
 # make sure you don't have /usr/bin/python and py
 # link py and python command to python3.11 or you should type "python3.11" to enable python
-sudo ln -s /usr/bin/python3.11 /usr/bin/python
-sudo ln -s /usr/bin/python3.11 /usr/bin/py
+sudo ln -s /usr/bin/python3.10 /usr/bin/python
+sudo ln -s /usr/bin/python3.10 /usr/bin/py
 
 
 
 sudo apt install python3-pip
-sudo apt install python3.11-venv
+sudo apt install python3.10-venv
 
